@@ -1,14 +1,12 @@
 import webbrowser
 import random
+import string
 import time
-
-# List of random words to search for
-random_words = ["apple", "banana", "carrot", "dog", "elephant", "fire", "guitar", "house", "ice cream", "jacket"]
 
 # Perform 30 searches
 for i in range(30):
-    # Choose a random word from the list
-    search_term = random.choice(random_words)
+    # Generate a random search term of length between 3 and 8 characters
+    search_term = ''.join(random.choices(string.ascii_lowercase, k=random.randint(3, 8)))
     
     # Construct the Bing search URL with the search term
     url = f"https://www.bing.com/search?q={search_term}"
