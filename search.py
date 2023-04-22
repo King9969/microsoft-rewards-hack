@@ -15,4 +15,4 @@ for i in range(30):
     webbrowser.open(url)
     
     # Wait for a random amount of time (between 1 and 5 seconds) before performing the next search
-    time.sleep(random.randint(1, 5))
+    time.sleep(1)
